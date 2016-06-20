@@ -33,4 +33,5 @@
 * `toFixed()` method returns a string representation of a number with a specified number of decimal points. If the number has more than the given number of decimal places, the result is rounded to the nearest decimal place.
 * `toExponential()` returns a string with the number formatted in exponential notation.
 * `toPrecision()` returns either the fixed or the exponential representation of a number, depending on which makes the most sense. This method takes on argument, which is the total number of digits to use to represent the number (not including exponents).
+* ECMAScript provides `replace()` method to simplify replacing substrings. If the first argument is a string, then only the first occurrence of the substring will be replaced. The only way to replace all instances of a substring is to provide a regular expression with the global flag specified.
 * 
