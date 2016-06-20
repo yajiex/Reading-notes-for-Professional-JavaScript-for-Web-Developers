@@ -10,3 +10,7 @@
 * Because functions are objects, function names are simply pointers to function objects. So the global `sayHello()` function and `o.sayHello()`point to the same function event though they execute in different contexts.
 * Function declarations are read and available in an execution context before any code is executed, whereas function expressions aren't complete until the execution reaches that line of code. As the code is being evaluated, the JavaScript engine does a first pass for function declarations and pulls them to the top of the source tree. So even though the function declaration appears after its usage in the actual source code, the engine changes this to boist the function declarations to the top.
 * `arguments` object has a property named `called`, which is a pointer to the function that owns the arguments object.
+* ECMAScript 5 formalizes an additional property on a function object: `caller`, it contains a reference to the function that called this function or `null` of the function was called from the global scope.
+* ECMAScript 5 also defines `arguments.caller`, which results in an error in strict mode and is always undefined outside of strict mode. This is to clear up confusion between `arguments.caller` and the `caller` property of functions.
+* The `length` property of function indicates the number of named arguments that the function expects.
+* 
