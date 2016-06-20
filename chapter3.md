@@ -37,4 +37,6 @@
 * By default, all integers are represented as singed in ECMAScript.
 * `NaN` and `Infinity` are treated as equivalent to 0 when used in bitwise operations.
 * Bitwise NOT: negates the number and substracts 1.
+* Left shift preserves the sign of the number it's operating on. `-2 << 5` => `-64`
+* ECMAScript fills empty bits produced by signed right shift with the value in the sign bit to create a complete number, while fills them with zeros when unsigned right shifting.
 * 
