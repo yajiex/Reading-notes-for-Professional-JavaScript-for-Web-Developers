@@ -22,4 +22,7 @@
       };
       (object.getName = object.getName)(); //"The window"
 * JavaScript will never tell you if you've declared the same variable more than once; it simply ignores all subsequent declarations (though it will honor initializations).
-* JavaScript sees the `function` keyword as the beginning of a function declaration, and function declarations cannot be followed by parentheses. Function expressions, however, can be followed by parentheses.      
+* JavaScript sees the `function` keyword as the beginning of a function declaration, and function declarations cannot be followed by parentheses. Function expressions, however, can be followed by parentheses. So the following code causes errors:
+      function() {
+      }(); // error!
+    
