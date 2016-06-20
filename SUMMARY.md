@@ -5,5 +5,5 @@
 * [Chapter 3: Language Basics](chapter_3_language_basics.md)
 * [Chapter 4: Variables, Scope, and Memory](chapter_4_variables,_scope,_and_memory.md)
 * [Chapter 5: Reference Types](chapter_5_reference_types.md)
-* Chapter 6: Object-Oriented Programming
+* [Chapter 6: Object-Oriented Programming](chapter_6_object-oriented_programming.md)
 
