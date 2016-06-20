@@ -13,4 +13,20 @@
 * ECMAScript 5 formalizes an additional property on a function object: `caller`, it contains a reference to the function that called this function or `null` of the function was called from the global scope.
 * ECMAScript 5 also defines `arguments.caller`, which results in an error in strict mode and is always undefined outside of strict mode. This is to clear up confusion between `arguments.caller` and the `caller` property of functions.
 * The `length` property of function indicates the number of named arguments that the function expects.
+* Any time a string value is accessed in read mode, the following three steps occur:
+  1. Create an instance of the `String` type
+  2. Call the specified method on the instance
+  3. Destroy the instance
+* Automatically created primitive wrapper objects exist for only one line of code before they are destroyed. This means that properties and methods cannot be added at runtime. Take this for example:
+      var s1 = "some test";
+      s1.color = "red";
+      alert(s1.color); //undefined
+  `String` object that was created in the second line is destroyed by the time the third line is executed. The third line creates its own `String` object, which doesn't have the `color` property.
+* Calling a primitive wrapper constructor using `new` is not the same as calling the casting function of the same name, for example:
+      var value = "25";
+      var number = Number(value);
+      alert(typeof number); //"number"
+      
+      var obj = new Number(value);
+      alert(typeof obj); //"object"
 * 
