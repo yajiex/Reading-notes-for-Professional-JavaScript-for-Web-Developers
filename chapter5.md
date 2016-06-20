@@ -30,4 +30,7 @@
       var obj = new Number(value);
       alert(typeof obj); //"object"
 * A `Boolean` object is an instance of the `Boolean` type and will return `true` when used with the `instanceof` operator, whereas a primitive value returns `false`
+* `toFixed()` method returns a string representation of a number with a specified number of decimal points. If the number has more than the given number of decimal places, the result is rounded to the nearest decimal place.
+* `toExponential()` returns a string with the number formatted in exponential notation.
+* `toPrecision()` returns either the fixed or the exponential representation of a number, depending on which makes the most sense. This method takes on argument, which is the total number of digits to use to represent the number (not including exponents).
 * 
