@@ -15,7 +15,10 @@
       }
       var person1 = new Person("Nicholas", 29);
       var person2 = new Person("Greg", 27);
-* In the following Prototype Pattern sample, `Person.prototype` points to the prototype object but `Person.prototype.constructor` points back to `Person`
+* In the following Prototype Pattern sample, `Person.prototype` points to the prototype object but `Person.prototype.constructor` points back to `Person`.
       function Person() {}
       Person.prototype.name = "Nicholas";
       var person1 = new Person();
+* `isPrototypeOf()`: determine if this relationship exists between objects
+* `Object.getPrototypeOf()`: return the value of `Prototype`.
+* 
