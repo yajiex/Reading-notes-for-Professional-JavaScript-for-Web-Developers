@@ -1,6 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* Chapter 2: JavaScript in HTML
+* [Chapter 2: JavaScript in HTML](chapter_2_javascript_in_html.md)
 * Chapter 3: Language Basics
 
