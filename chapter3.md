@@ -27,4 +27,5 @@
 * `parseFloat()` parses only decimal values. If the string represents a whole number (no decimal point or only a zero after the decimal point), `parseFloat()` returns an integer. `parseFloat("1234blue")` => `1234`
 * Character literals such as `\n` `\unnnn` will be interpreted as if they were a single character.
 * `toString()` is not available for `null` and `undefined`.
+* `String(null)` => `"null"`, `String(undefined)` => `"undefined"`
 * 
