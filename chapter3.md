@@ -67,4 +67,10 @@
   3. Values of `null` and `undefined` cannot be converted into any other values for equality checking, `undefined == 0` => `false`
   4. If either operand is `NaN`, the equal operator returns `false` and the not-equal operator returns `true`
   5. If both operands are objects, then they are compared to see if they point to the same object
+* The `for-in` is used to enumerate the properties of an object, the order in which property names are returned cannot necessarily be predicted.
+* It's possible to label statements for later use
+* The `switch` statement compares values using the identically equal operators, so no type coercion occurs.
+* The values of `arguments` always stay in sync with the values of the corresponding named parameters. This doesn't mean that both access the same memory space, though; their memory spaces are separate but happen to be kept in sync. The length of the `arguments` object is set based on the number of arguments passed in, not the number of named arguments listed for the function.
+* All arguments in ECMAScript are passed by value, it's not possible to pass arguments by reference.
+*  
  
