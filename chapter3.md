@@ -24,4 +24,6 @@
   1. `parseInt("1234blue")` => `1234`
   2. `parseInt("")` => `NaN`
   3. `parseInt("070")` => `70` (ECMAScript 5)
-  4. 
+* `parseFloat()` parses only decimal values. If the string represents a whole number (no decimal point or only a zero after the decimal point), `parseFloat()` returns an integer. `parseFloat("1234blue")` => `1234`
+* Character literals such as `\n` `\unnnn` will be interpreted as if they were a single character.
+* 
