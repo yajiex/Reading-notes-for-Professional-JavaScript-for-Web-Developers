@@ -4,4 +4,12 @@
 * `typeof null` will return `object`, as the special value `null` is considered to be an empty object reference.
 * Referring undeclared variable will cause an error. Only `typeof` can be called on an undeclared variable. The `typeof` operator will both return `undefined` when called on uninitialized or undeclared variable.
 * `null == undefined` will return `true`
+* Some conversions tips:
+  1. Any nonempty string => `true`, ""(empty string) => `false`
+  2. Any nonzero number (including `infinity`) => true, `0, NaN` => `false`
+  3. Any object => `true`
+* `Number.MIN_VALUE` => `5e-324`, `Number.MAX_VALUE` => `1.7976931348623157e+308`
+* Any negative number that can't be represented is `-Infinity`, and any positive number that can't be represented is `Infinity`. If a calculation returns either positive or negative `Infinity`, that value cannot be used in any further calculations. 
+* To determine if a value is finite, use `isFinite()` function.
+* `Number.NEGATIVE_INFINITY` => `-Infinity`, `Number.POSITIVE_INFINITY` => `Infinity`
 * 
