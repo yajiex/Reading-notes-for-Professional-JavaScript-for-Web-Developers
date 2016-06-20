@@ -36,4 +36,5 @@
 * When outputting a negative number as a binary string, you get the binary code of the absolute value preceded by a minus sign, `-18.toString(2)` => `"-10010"`
 * By default, all integers are represented as singed in ECMAScript.
 * `NaN` and `Infinity` are treated as equivalent to 0 when used in bitwise operations.
+* Bitwise NOT: negates the number and substracts 1.
 * 
