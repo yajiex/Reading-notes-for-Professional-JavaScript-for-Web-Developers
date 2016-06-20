@@ -40,4 +40,9 @@
 * Left shift preserves the sign of the number it's operating on. `-2 << 5` => `-64`
 * ECMAScript fills empty bits produced by signed right shift with the value in the sign bit to create a complete number, while fills them with zeros when unsigned right shifting.
 * The unsigned-right-shift operator considers the binary representation of the negative number to be representative of a positive number instead. Negative number is the two's complement of its absolute value.
-* 
+* `!!` => `Boolean()`
+* Logical AND rules:
+  1. If the first operand is an object, then the second operand is always returned.
+  2. If the second operand is an object, then the object is returned only if the first operand evaluates to `true`.
+  3. If both operands are objects, then the second operand is returned.
+  4. 
