@@ -35,4 +35,4 @@
 * `toPrecision()` returns either the fixed or the exponential representation of a number, depending on which makes the most sense. This method takes on argument, which is the total number of digits to use to represent the number (not including exponents).
 * ECMAScript provides `replace()` method to simplify replacing substrings. If the first argument is a string, then only the first occurrence of the substring will be replaced. The only way to replace all instances of a substring is to provide a regular expression with the global flag specified.
 * `encodeURI()` does not encode special characters that are part of a URI, such as the colon, forward slash, question mark, and pound sign, whereas `encodeURIComponent()` encodes every nonstandard character it finds.
-* 
+* `Math.random()` returns a random number between 0(inclusive) and 1(exclusive).
