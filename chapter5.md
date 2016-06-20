@@ -29,4 +29,5 @@
       
       var obj = new Number(value);
       alert(typeof obj); //"object"
+* A `Boolean` object is an instance of the `Boolean` type and will return `true` when used with the `instanceof` operator, whereas a primitive value returns `false`
 * 
