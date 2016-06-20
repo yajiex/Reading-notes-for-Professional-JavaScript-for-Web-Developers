@@ -29,4 +29,9 @@
 * For `in` operator, when used on its own, the `in` operator returns `true` when a property of the given name is accessible by the object, which is to say that the property may exist on the instance or on the prototype.
 * `Object.keys()`: return an array of strings containing the names of all enumerable properties
 * `Object.getOwnPropertyNames()`: return all instance properties, whether enumerable or not
+* In the following example, the `constructor` property no longer points to `Person`. `constructor` property is equal to that of a completely new object (the `Object` constructor) instead of the function itself.
+      function Person(){}
+      Person.prototype = {
+          name: "Nicholas"
+      };
 * 
