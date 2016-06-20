@@ -15,13 +15,14 @@
       }
       var person1 = new Person("Nicholas", 29);
       var person2 = new Person("Greg", 27);
-* In the following Prototype Pattern sample, `Person.prototype` points to the prototype object but `Person.prototype.constructor` points back to `Person`. Setting the property to `null` only sets the property on the instance and doesn't restore the link to the prototype. The `delete` operator, however, completely removes the instance property and allows the `prototype` property to be accessed again.
+* In the following Prototype Pattern sample, `Person.prototype` points to the prototype object but `Person.prototype.constructor` points back to `Person`.
       function Person() {}
       Person.prototype.name = "Nicholas";
       var person1 = new Person();
       person1.name = "Greg";
       delete person1.name;
       alert(person1.name); // Nicholas - from the prototype
+   Once a property is added to the object instance, it shadows any properties of the same name on the prototype, which means that it blocks access to the property on the prototype without altering it. Setting the property to `null` only sets the property on the instance and doesn't restore the link to the prototype. The `delete` operator, however, completely removes the instance property and allows the `prototype` property to be accessed again.
 * `isPrototypeOf()`: determine if this relationship exists between objects
 * `Object.getPrototypeOf()`: return the value of `Prototype`.
 * 
