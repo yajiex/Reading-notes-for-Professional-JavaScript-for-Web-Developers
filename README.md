@@ -1,3 +1,3 @@
-# My Awesome Book
+# Reading notes for Professional JavaScript for Web Developers
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+It's right time to recap Professional JavaScript for Web Developers, I will record my notes when recapping this book, and most of them are new to me until I read this book again.
