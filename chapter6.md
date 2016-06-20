@@ -25,5 +25,6 @@
    Once a property is added to the object instance, it shadows any properties of the same name on the prototype, which means that it blocks access to the property on the prototype without altering it. Setting the property to `null` only sets the property on the instance and doesn't restore the link to the prototype. The `delete` operator, however, completely removes the instance property and allows the `prototype` property to be accessed again.
 * `isPrototypeOf()`: determine if this relationship exists between objects
 * `Object.getPrototypeOf()`: return the value of `Prototype`.
-* `Object.getOwnPropertyDescriptor()` works only on instance properties; to retrieve the descriptor of a prototype property, call `Object.getOwnPropertyDescriptor()` on the prototype object derectly.
+* `Object.getOwnPropertyDescriptor()` works only on instance properties; to retrieve the descriptor of a prototype property, call `Object.getOwnPropertyDescriptor()` on the prototype object directly.
+* For `in` operator, when used on its own, the `in` operator returns `true` when a property of the given name is accessible by the object, which is to say that the property may exist on the instance or on the prototype.
 * 
