@@ -12,4 +12,4 @@
 * Any negative number that can't be represented is `-Infinity`, and any positive number that can't be represented is `Infinity`. If a calculation returns either positive or negative `Infinity`, that value cannot be used in any further calculations. 
 * To determine if a value is finite, use `isFinite()` function.
 * `Number.NEGATIVE_INFINITY` => `-Infinity`, `Number.POSITIVE_INFINITY` => `Infinity`
-* 
+* Any operation involving `NaN` always returns `NaN`, `NaN` is not equal to any value, including `NaN`
