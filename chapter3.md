@@ -45,4 +45,11 @@
   1. If the first operand is an object, then the second operand is always returned.
   2. If the second operand is an object, then the object is returned only if the first operand evaluates to `true`.
   3. If both operands are objects, then the second operand is returned.
-  4. 
+* Multiplicative operators rules:
+  1. `Infinity * 0` => `NaN`
+  2. `Infinity/Infinity` => `NaN`
+  3. If `Infinity` is divided by any nonzero number, the result is either `Infinity` or `-Infinity`, depending on the sign of the second operand.
+* Modulus rules
+  1. If the dividend is an infinite number and the divisor is a finite number, the result is `NaN`
+  2. If the dividend is a finite number and the divisor is 0, the result is `NaN`
+  3. 
