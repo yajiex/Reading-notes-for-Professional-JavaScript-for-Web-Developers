@@ -8,4 +8,12 @@
 * Once a property has been defined as nonconfigurable, it cannot become configurable again. Any attempt to call `Object.defineProperty()` and change any attribute other than `writable` causes an error.
 * `Object.defineProperties()`: define more than one property on an object
 * `Object.getOwnPropertyDescriptor()`: retrieve the property descriptor for a given property
+* In the following sample, `person1` and `person2` both have a `contructor` property that points back to `Person`    
+      function Person(name, age) {
+          this.name = name;
+          this.age = age;
+      }
+      var person1 = new Person("Nicholas", 29);
+      var person2 = new Person("Greg", 27);
 * 
+         
