@@ -35,3 +35,4 @@
           name: "Nicholas"
       };
 *  Be aware that all instances will share the properties on the prototype, including reference values (like array).
+*  The most common way of defining custom types is to combine the constructor and prototype patterns. The constructor pattern defines instance properties, whereas the prototype pattern defines methods and shared properties.
