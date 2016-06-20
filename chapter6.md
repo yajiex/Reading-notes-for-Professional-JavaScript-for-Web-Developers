@@ -27,4 +27,6 @@
 * `Object.getPrototypeOf()`: return the value of `Prototype`.
 * `Object.getOwnPropertyDescriptor()` works only on instance properties; to retrieve the descriptor of a prototype property, call `Object.getOwnPropertyDescriptor()` on the prototype object directly.
 * For `in` operator, when used on its own, the `in` operator returns `true` when a property of the given name is accessible by the object, which is to say that the property may exist on the instance or on the prototype.
+* `Object.keys()`: return an array of strings containing the names of all enumerable properties
+* `Object.getOwnPropertyNames()`: return all instance properties, whether enumerable or not
 * 
