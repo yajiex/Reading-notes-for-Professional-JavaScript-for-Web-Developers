@@ -1,0 +1,3 @@
+# 8 The Browser Object Model
+* Global variables cannot be removed using the `delete` operator, while properties defined directly on `window` can. Attempting to access an undeclared variable throws an error, but it is possible to check for the existence of a potentially undeclared variable by looking on the `window` object.
+* The second argument of `setTimeout()` tells the JavaScript engine to add this task onto the queue after a set number of milliseconds. If the queue is empty, then that code is executed immediately; if the queue is not empty, the code must wait its turn.
