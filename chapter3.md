@@ -13,3 +13,6 @@
 * To determine if a value is finite, use `isFinite()` function.
 * `Number.NEGATIVE_INFINITY` => `-Infinity`, `Number.POSITIVE_INFINITY` => `Infinity`
 * Any operation involving `NaN` always returns `NaN`, `NaN` is not equal to any value, including `NaN`
+* `0/0` => `NaN`, `1/0` => `Infinity`, `(-1)/0` => `-Infinity`
+* `isNaN()` is used to determine if the value is "not a number", it will attemp to convert argument into a number. `isNaN` can be applied to objects. The object's `valueOf()` method is first called to determine if the returned value can be converted into a number. If not, the `toString()` method is called.
+*  
