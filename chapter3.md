@@ -28,4 +28,7 @@
 * Character literals such as `\n` `\unnnn` will be interpreted as if they were a single character.
 * `toString()` is not available for `null` and `undefined`.
 * `String(null)` => `"null"`, `String(undefined)` => `"undefined"`
+* Rules for increment and decrement operators:
+  1. When used on a string that is a valid representation of a number, convert to a number and apply the change. The variable is changed from a string to a number.
+  2. When used on a string that is not a valid number, the variable's value is set to `NaN`. The variable is changed from a string to a number.
 * 
