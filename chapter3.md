@@ -31,4 +31,5 @@
 * Rules for increment and decrement operators:
   1. When used on a string that is a valid representation of a number, convert to a number and apply the change. The variable is changed from a string to a number.
   2. When used on a string that is not a valid number, the variable's value is set to `NaN`. The variable is changed from a string to a number.
-* 
+* When the unary plus is applied to a nonnumeric value, it performs the same conversion as the `Number()` casting function.
+* All numbers in ECMAScript are stored in IEEE-754 64-bit format, but the bitwise operations don't work directly on the 64-bit representations. Instead, the value is converted into a 32-bit integer, the operation takes place, and the result is converted back into 64 bits.
