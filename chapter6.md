@@ -34,4 +34,4 @@
       Person.prototype = {
           name: "Nicholas"
       };
-*  
+*  Be aware that all instances will share the properties on the prototype, including reference values (like array).
