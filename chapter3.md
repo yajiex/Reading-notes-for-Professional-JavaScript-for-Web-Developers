@@ -52,4 +52,19 @@
 * Modulus rules
   1. If the dividend is an infinite number and the divisor is a finite number, the result is `NaN`
   2. If the dividend is a finite number and the divisor is 0, the result is `NaN`
-  3. 
+  3. `Infinity%Infinity` => `NaN`
+  4. If the dividend is a finite number and the divisor is an infinite number, then the result is the dividend
+* Additive operators rules
+  1. `Infinity + (-Infinity)` => `NaN`
+  2. `(+0) + (-0)` => `+0`
+* Relational operators rules
+  1. If two operands are strings, compare the character codes of each corresponding character in the string
+  2. If one operand is a number, convert the other operand to a number and perform a numeric comparison
+  3. The result of any relational operation with `NaN` is `false`
+* Equal operators rules
+  1. If an operand is a Boolean value, convert it into a numeric value before checking for equality. `false` => `0`, `true` => `1`, `true == 2` => `false`
+  2. `null == undefined` => `true`, `null === undefined` => `false`
+  3. Values of `null` and `undefined` cannot be converted into any other values for equality checking, `undefined == 0` => `false`
+  4. If either operand is `NaN`, the equal operator returns `false` and the not-equal operator returns `true`
+  5. If both operands are objects, then they are compared to see if they point to the same object
+ 
