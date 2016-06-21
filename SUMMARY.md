@@ -9,5 +9,5 @@
 * [Chapter 7: Function Expressions](chapter_7_function_expressions.md)
 * [Chapter 8: The Browser Object Model](chapter_8_the_browser_object_model.md)
 * [Chapter 10: The Document Object Model](chapter_10_the_document_object_model.md)
-* Chapter 11: DOM Extensions
+* [Chapter 11: DOM Extensions](chapter_11_dom_extensions.md)
 
