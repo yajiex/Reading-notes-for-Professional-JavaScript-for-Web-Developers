@@ -19,4 +19,5 @@
 * [Chapter 16: HTML5 Scripting](chapter_16_html5_scripting.md)
 * [Chapter 17: Error Handling and Debugging](chapter_17_error_handling_and_debugging.md)
 * [Chapter 20: JSON](chapter_20_json.md)
+* Chapter 21: Ajax and Comet
 
