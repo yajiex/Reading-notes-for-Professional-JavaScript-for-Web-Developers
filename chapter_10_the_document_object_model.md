@@ -26,3 +26,5 @@
         </script>
       </body>
       </html>
+* If `document.write()` is called after the page has been completely loaded, the content overwrites the entire page. Neither `open()` nor `close()` is required to be used when `write()` or `writeln()` is used during the course of page loading.
+* 
