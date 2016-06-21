@@ -9,3 +9,5 @@
   2. `complete` => The document is completely loaded
 * When in standards mode, `document.compatMode` is equal to `CSS1Compat`; when in quirks mode, `document.compatMode` is `BackCompat`
 * The `charset` property indicates the actual character set being used by the document and by default this value is `"UTF-16"`. The `defaultCharset` property indicates what the default character set for the document should be based on default browser and system settings.
+* When a custom data attribute is defined, it can be accessed via the `dataset` property of the element.
+* 
