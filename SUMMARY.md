@@ -20,5 +20,5 @@
 * [Chapter 17: Error Handling and Debugging](chapter_17_error_handling_and_debugging.md)
 * [Chapter 20: JSON](chapter_20_json.md)
 * [Chapter 21: Ajax and Comet](chapter_21_ajax_and_comet.md)
-* Chapter 22: Advanced Techniques
+* [Chapter 22: Advanced Techniques](chapter_22_advanced_techniques.md)
 
