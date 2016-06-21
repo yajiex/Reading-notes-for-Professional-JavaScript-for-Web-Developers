@@ -1,7 +1,7 @@
 # Chapter 10: The Document Object Model
 
 * Every node has a `nodeType` property that indicates the type of node that it is.
-* `NodeList` objects are actually queries being run against the DOM structure, so changes will be reflected in `NodeList` objects automatically.
+* `NodeList`, `NamedNodeMap` objects are actually queries being run against the DOM structure, so changes will be reflected in `NodeList` objects automatically.
 * The `ownerDocument` property is a pointer to the document node that represents the entire document.
 * If the node passed into `appendChild()` is already part of the document, it is removed from its previous location and placed at the new location.
 * The `cloneNode()` method doesn't copy JavaScript properties that you add to DOM nodes, such as event handlers. This method copies only attributes and, optionally, child nodes. Everything else is lost.
@@ -28,4 +28,5 @@
       </html>
 * If `document.write()` is called after the page has been completely loaded, the content overwrites the entire page. Neither `open()` nor `close()` is required to be used when `write()` or `writeln()` is used during the course of page loading.
 * Every HTML element `HTMLElement` has a property `dir`, indicates the direction of the language, `"ltr"` or `"rtl"`
-* 
+* When `normalize()` is called on a parent of two or more text nodes, those nodes are merged into one text node whose `nodeValue` is equal to the concatenation of the `nodeValue` properties of each text node.
+* The `splitText()` method splits a text node into two text nodes, separating the `nodeValue` at a given offset. The method returns the new text node, which has the same `parentNode` as the original.
