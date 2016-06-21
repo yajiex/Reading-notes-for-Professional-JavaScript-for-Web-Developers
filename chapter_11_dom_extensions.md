@@ -17,3 +17,4 @@
   2. `"afterbegin"` => Insert just inside of the element as a new child or series of children before the first child
   3. `"beforeend"` => Insert just inside of the element as a new child or series of children after the last child
   4. `"afterend"` => Insert just after the element as a next sibling
+* Inserting a large amount of new HTML is more efficient through `innerHTML` than through multiple DOM operations to create nodes and assign relationships between them. This is because an HTML parser is created whenever a value is set to `innerHTML` (or `outerHTML`). This parser runs in browser-level code (ofter written in C++), which is must faster thant JavaScript
