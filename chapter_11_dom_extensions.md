@@ -23,5 +23,8 @@
       <meta http-equiv="X-UA-Compatible" content="IE=IEVersion">
 * You can determine the document mode for a given page using the `document.documentMode` property.
 * The `contains()` method is called on the ancestor node from which the search should begin and accepts a single argument, which is the suspected descendant node. If the node exists as a descendant of the root node, the method returns `true`; otherwise it returns `false`
-* `compareDocumentPosition()` could alwo determine node relationships, it returns a bitmask indicating the relationship.
-* 
+* `compareDocumentPosition()` could also determine node relationships, it returns a bitmask indicating the relationship.
+* Scrolling:
+  1. `scrollIntoViewIfNeeded(alignCenter)` => Scrolls the browser window or container element so that the element is visible in the viewport only if it's not already visible; if the element is already visible in the viewport, this method does nothing. The optional `alignCenter` argument will attempt to place the element in the center of the viewport if set to `true`
+  2. `scrollByLines(lineCount)`
+  3. `scrollByPages(pageCount)`
