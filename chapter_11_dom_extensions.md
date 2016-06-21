@@ -22,3 +22,4 @@
 * Force a particular document mode by using the `X-UA-Compatible` HTTP header or by using the `<meta>` tag equivalent:
       <meta http-equiv="X-UA-Compatible" content="IE=IEVersion">
 * You can determine the document mode for a given page using the `document.documentMode` property.
+* 
