@@ -10,4 +10,6 @@
 * When in standards mode, `document.compatMode` is equal to `CSS1Compat`; when in quirks mode, `document.compatMode` is `BackCompat`
 * The `charset` property indicates the actual character set being used by the document and by default this value is `"UTF-16"`. The `defaultCharset` property indicates what the default character set for the document should be based on default browser and system settings.
 * When a custom data attribute is defined, it can be accessed via the `dataset` property of the element.
+* `innerHTML` returns the HTML representing all of the child nodes, including elements, comments, and text nodes.
+* `outerHTML` returns the HTML of the element on which it is called, as well as its child nodes.
 * 
