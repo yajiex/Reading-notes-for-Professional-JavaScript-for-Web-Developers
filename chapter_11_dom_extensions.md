@@ -17,4 +17,6 @@
   2. `"afterbegin"` => Insert just inside of the element as a new child or series of children before the first child
   3. `"beforeend"` => Insert just inside of the element as a new child or series of children after the last child
   4. `"afterend"` => Insert just after the element as a next sibling
-* Inserting a large amount of new HTML is more efficient through `innerHTML` than through multiple DOM operations to create nodes and assign relationships between them. This is because an HTML parser is created whenever a value is set to `innerHTML` (or `outerHTML`). This parser runs in browser-level code (often written in C++), which is must faster than JavaScript
+* Inserting a large amount of new HTML is more efficient through `innerHTML` than through multiple DOM operations to create nodes and assign relationships between them. This is because an HTML parser is created whenever a value is set to `innerHTML` (or `outerHTML`). This parser runs in browser-level code (often written in C++), which is must faster than JavaScript.
+* The `scrollIntoView()` method exists on all HTML elements and scrolls the browser window or container element so the element is visible in the viewport. If an argument of `true` is supplied or the argument is omitted, the window scrolls so that the top of the element is at the top of the viewport (if possible); otherwise, the element is scrolled so that it is fully visible in the viewport but may not be aligned at the top.
+* 
