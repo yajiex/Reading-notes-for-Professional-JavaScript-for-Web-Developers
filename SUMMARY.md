@@ -12,4 +12,5 @@
 * [Chapter 11: DOM Extensions](chapter_11_dom_extensions.md)
 * [Chapter 18: XML in JavaScript](chapter_18_xml_in_javascript.md)
 * [Chapter 19: ECMAScript for XML](chapter_19_ecmascript_for_xml.md)
+* Chapter 12: DOM Levels 2 and 3
 
