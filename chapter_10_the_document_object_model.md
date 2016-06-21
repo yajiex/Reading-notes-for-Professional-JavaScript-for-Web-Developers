@@ -11,4 +11,9 @@
 * `document.domain` can never be set to a domain that the URL doesn't contain. Pages from different subdomains can't communicate with one another via JavaScript because of cross-domain security restrictions. By setting `document.domain` in each page to the same value, the pages can access `JavaScript` objects from each other. A further restriction in the browser disallows tightening of the `domain` property once it has been loosened.
 * `HTMLCollection` object has an method `namedItem`, that lets you reference an item in the collection via its `name` attribute. You can also access named items by using bracket notation.
 * To retrieve all elements in the document, pass in `"*"` to `getElementsByTagName()`.
+* Special Collections:
+  1. `document.anchors` => Contains all `<a>` elements with a `name` attribute in the document.
+  2. `document.forms` => Contains all `<form>` elements in the document.
+  3. `document.images` => Contains all `<img>` elements in the document.
+  4. `document.links` => Contains all `<a>` elements with an `href` attribute in the document.
 * 
