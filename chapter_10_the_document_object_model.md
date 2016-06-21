@@ -9,4 +9,6 @@
 * `var doctype = document.doctype; // get reference to <!DOCTYPE>`
 * Changing the value of the `title` property does not change the `<title>` element at all.
 * `document.domain` can never be set to a domain that the URL doesn't contain. Pages from different subdomains can't communicate with one another via JavaScript because of cross-domain security restrictions. By setting `document.domain` in each page to the same value, the pages can access `JavaScript` objects from each other. A further restriction in the browser disallows tightening of the `domain` property once it has been loosened.
+* `HTMLCollection` object has an method `namedItem`, that lets you reference an item in the collection via its `name` attribute. You can also access named items by using bracket notation.
+* To retrieve all elements in the document, pass in `"*"` to `getElementsByTagName()`.
 * 
