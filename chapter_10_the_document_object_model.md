@@ -6,4 +6,6 @@
 * If the node passed into `appendChild()` is already part of the document, it is removed from its previous location and placed at the new location.
 * The `cloneNode()` method doesn't copy JavaScript properties that you add to DOM nodes, such as event handlers. This method copies only attributes and, optionally, child nodes. Everything else is lost.
 * `documentElement` property always points to the `<html>` element in an HTML page.
+* `var doctype = document.doctype; // get reference to <!DOCTYPE>`
+* Changing the value of the `title` property does not change the `<title>` element at all.
 * 
