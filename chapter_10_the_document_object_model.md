@@ -16,4 +16,5 @@
   2. `document.forms` => Contains all `<form>` elements in the document.
   3. `document.images` => Contains all `<img>` elements in the document.
   4. `document.links` => Contains all `<a>` elements with an `href` attribute in the document.
+* The `document.implementation` property is an object containing information and functionality tied directly to the browser's implementation of the DOM. `var hasXmlDom = document.implementation.hasFeature("XML", "1.0");`
 * 
