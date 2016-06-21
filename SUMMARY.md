@@ -13,5 +13,5 @@
 * [Chapter 18: XML in JavaScript](chapter_18_xml_in_javascript.md)
 * [Chapter 19: ECMAScript for XML](chapter_19_ecmascript_for_xml.md)
 * [Chapter 12: DOM Levels 2 and 3](chapter_12_dom_levels_2_and_3.md)
-* Chapter 13: Events
+* [Chapter 13: Events](chapter_13_events.md)
 
