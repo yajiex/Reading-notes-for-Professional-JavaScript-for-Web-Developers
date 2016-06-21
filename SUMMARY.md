@@ -15,5 +15,5 @@
 * [Chapter 12: DOM Levels 2 and 3](chapter_12_dom_levels_2_and_3.md)
 * [Chapter 13: Events](chapter_13_events.md)
 * [Chapter 14: Scripting Forms](chapter_14_scripting_forms.md)
-* Chapter 15: Graphics with Canvas
+* [Chapter 15: Graphics with Canvas](chapter_15_graphics_with_canvas.md)
 
