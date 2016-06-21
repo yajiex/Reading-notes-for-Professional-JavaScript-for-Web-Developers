@@ -12,4 +12,8 @@
 * When a custom data attribute is defined, it can be accessed via the `dataset` property of the element.
 * `innerHTML` returns the HTML representing all of the child nodes, including elements, comments, and text nodes.
 * `outerHTML` returns the HTML of the element on which it is called, as well as its child nodes.
-* 
+* `insertAdjacentHTML()` accepts two arguments: the position in which to insert and the HTML text to insert, the first argument must be one of the following values:
+  1. `"beforebegin"` => Insert just before the element as a previous sibling
+  2. `"afterbegin"` => Insert just inside of the element as a new child or series of children before the first child
+  3. `"beforeend"` => Insert just inside of the element as a new child or series of children after the last child
+  4. `"afterend"` => Insert just after the element as a next sibling
