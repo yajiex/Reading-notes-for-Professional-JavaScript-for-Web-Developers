@@ -17,4 +17,12 @@
   3. `document.images` => Contains all `<img>` elements in the document.
   4. `document.links` => Contains all `<a>` elements with an `href` attribute in the document.
 * The `document.implementation` property is an object containing information and functionality tied directly to the browser's implementation of the DOM. `var hasXmlDom = document.implementation.hasFeature("XML", "1.0");`
-* 
+* Even though the following code looks correct, the closing `"</script>"` string is interpreted as matching the outermost `<script>` tag. To avoid this, you simply need to change the string as `"<\/script>"`
+      <html>
+      <head></head>
+      <body>
+        <script type="text/javascript">
+          document.write("<script></script>");
+        </script>
+      </body>
+      </html>
