@@ -21,4 +21,5 @@
 * [Chapter 20: JSON](chapter_20_json.md)
 * [Chapter 21: Ajax and Comet](chapter_21_ajax_and_comet.md)
 * [Chapter 22: Advanced Techniques](chapter_22_advanced_techniques.md)
+* Chapter 23: Offline Applications and Client-Side Storage
 
