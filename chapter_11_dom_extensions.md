@@ -22,4 +22,5 @@
 * Force a particular document mode by using the `X-UA-Compatible` HTTP header or by using the `<meta>` tag equivalent:
       <meta http-equiv="X-UA-Compatible" content="IE=IEVersion">
 * You can determine the document mode for a given page using the `document.documentMode` property.
+* The `contains()` method is called on the ancestor node from which the search should begin and accepts a single argument, which is the suspected descendant node. If the node exists as a descendant of the root node, the method returns `true`; otherwise it returns `false`
 * 
