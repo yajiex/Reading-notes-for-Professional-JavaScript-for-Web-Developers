@@ -17,4 +17,5 @@
 * [Chapter 14: Scripting Forms](chapter_14_scripting_forms.md)
 * [Chapter 15: Graphics with Canvas](chapter_15_graphics_with_canvas.md)
 * [Chapter 16: HTML5 Scripting](chapter_16_html5_scripting.md)
+* Chapter 17: Error Handling and Debugging
 
