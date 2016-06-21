@@ -11,4 +11,5 @@
 * [Chapter 10: The Document Object Model](chapter_10_the_document_object_model.md)
 * [Chapter 11: DOM Extensions](chapter_11_dom_extensions.md)
 * [Chapter 18: XML in JavaScript](chapter_18_xml_in_javascript.md)
+* Chapter 19: ECMAScript for XML
 
