@@ -103,4 +103,5 @@
   1. The contents of the range are extracted (similarly to using `extractContents()`).
   2. The given node is inserted into the position in the original document where the range was.
   3. The contents of the document fragment are added to the given node.
-  4. 
+* You can collapse a range by using the `collapse()` method, which accepts a single argument: a Boolean value indicating which end of the range to collapse to. If the argument is `true`, then the range is collapsed to its starting point; if it is `false`, the range is collapsed to its ending point. To determine if a range is already collapsed, you can use the `collapsed` property
+* 
