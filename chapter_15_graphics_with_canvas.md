@@ -13,4 +13,5 @@
 * `createLinearGradient()` accepts four arguments: the starting x-coordinate, the starting y-coordinate, the ending x-coordinate, and the ending y-coordinate.
 * `createRadialGradient()` accepts six arguments corresponding to the center of a circle and its radius. The first three arguments define the starting circle's center (x and y) and radius, while the last three define the same for the ending circle.
 * To create a new pattern, call the `createPattern()` method and pass in two arguments: an HTML `<img>`, `<video>` or `<canvas>` element and a string indicating how the image should be repeated. The second argument is the same as the values for the CSS `background-repeat` property: `"repeat"`, `"repeat-x"`, `"repeat-y"`, and `"no-repeat"`.
+* `getImageData()` method
 
