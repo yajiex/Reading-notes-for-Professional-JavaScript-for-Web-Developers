@@ -14,5 +14,7 @@
 * `createRadialGradient()` accepts six arguments corresponding to the center of a circle and its radius. The first three arguments define the starting circle's center (x and y) and radius, while the last three define the same for the ending circle.
 * To create a new pattern, call the `createPattern()` method and pass in two arguments: an HTML `<img>`, `<video>` or `<canvas>` element and a string indicating how the image should be repeated. The second argument is the same as the values for the CSS `background-repeat` property: `"repeat"`, `"repeat-x"`, `"repeat-y"`, and `"no-repeat"`.
 * `getImageData()` method retrieves raw image data, it accepts four arguments: the left and top position of the first pixel whose data should be retrieved, and the pixel width and the pixel height to retrieve.
+* The `globalAlpha` property is a number between 0 and 1, inclusive, that specifies the alpha value for all drawings.
+* The `globalCompositionOperation` property indicates how newly drawn shapes should merge with the already-existing image on the context.
 * 
 
