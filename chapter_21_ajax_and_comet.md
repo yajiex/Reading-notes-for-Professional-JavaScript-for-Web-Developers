@@ -14,3 +14,7 @@
   1. Custom headers cannot be set using `setRequestHeader()`.
   2. Cookies are neither sent nor received.
   3. The `getAllResponseHeaders()` method always returns an empty string.
+* There are two popular approaches to Comet: long polling and streaming.
+  1. Long polling => The page initiates a request to the server and the server holds that connection open until it has data to send. Once the data is sent, the connection is closed by the browser and a new connection is immediately opened up to the server. This process continues for as long as the page is open in the browser.
+  2. HTTP streaming => The browser sends a request to the server and the server holds that connection open, periodically sending data through the connection to the server.
+* 
