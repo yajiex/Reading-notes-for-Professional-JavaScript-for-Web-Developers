@@ -7,8 +7,7 @@
 * The `dragenter` event (similar to the `mouseover` event) fires as soon as the item is dragged over the drop target. Immediately after the `dragenter` event fires, the `dragover` event fires and continues to fire as the item is being dragged within the boundaries of the drop target. When the item is dragged outside of the drop target, `dragover` stops firing and the `dragleave` event is fired (similar to `mouseout`). If the dragged item is actually dropped on the target, the `drop` event fires instead of `dragleave`. The target of these events is the drop target element.
 * If you drag an element over something that doesn't allow a drop, the drop event will never fi re regardless of the user action. However, you can turn any element into a valid drop target by overriding the default behavior of both the `dragenter` and the `dragover` events.
 * The `dataTransfer` object has two primary methods: `getData()` and `setData()`.
-* The `dropEffect` property is used to tell the browser which type of drop behaviors are allowed. Each of these values causes a different cursor to be displayed when an item is dragged over the drop
-target. This property has the following four possible values:
+* The `dropEffect` property is used to tell the browser which type of drop behaviors are allowed. Each of these values causes a different cursor to be displayed when an item is dragged over the drop target. The `dropEffect` property is useless, unless you also set the `effectAllowed`. This property indicates which `dropEffect` is allowed for the dragged item. `dropEffect` property has the following four possible values:
   1. `"none"` => A dragged item cannot be dropped here. This is the default value for everything except text boxes.
   2. `"move"` => The dragged item should be moved to the drop target.
   3. `"copy"` => The dragged item should be copied to the drop target.
