@@ -70,4 +70,11 @@
   2. `whatToShow` => A numerical code indicating which nodes should be visited. It's a bitmask that determines which node to visit by applying one or more filters.
   3. `filter` => A `NodeFilter` object or a function indicating whether a particular node should be accepted or rejected.
   4. `entityReferenceExpansion` => A Boolean value indicating whether entity references should be expanded. This has no effect in HTML pages, because entity references are never expanded.
+* `TreeWalker` is a more advanced version of `NodeIterator`. It has the same functionality, including `nextNode()` and `previousNode()`, and adds the following methods to traverse a DOM structure in different directions:
+  1. `parentNode()` => Travels to the current node’s parent.
+  2. `firstChild()` => Travels to the fi rst child of the current node.
+  3. `lastChild()` => Travels to the last child of the current node.
+  4. `nextSibling()` => Travels to the next sibling of the current node.
+  5. `previousSibling()` => Travels to the previous sibling of the current node.
+* When used with a `TreeWalker` object, `NodeFilter.FILTER_SKIP` skips over the node and goes on to the next node in the subtree, whereas `NodeFilter.FILTER_REJECT` skips over that node and that node’s entire subtree.
 * 
