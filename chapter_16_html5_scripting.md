@@ -12,4 +12,5 @@
   2. `"move"` => The dragged item should be moved to the drop target.
   3. `"copy"` => The dragged item should be copied to the drop target.
   4. `"link"` => Indicates that the drop target will navigate to the dragged item (but only if it is a URL).
-  
+* `history.pushState()` method accepts three arguments: a `data` object, the title of the new state, and an optional relative URL. As soon as `pushState()` executes, the state information is pushed onto the history stack and the browser's address bar changes to reflect the new relative URL.
+* You can update the current state information by using `replaceState()` and passing in the same first two arguments as `pushState()`. Doing so does not create a new entry in history, it just overwrites the current state.
