@@ -30,5 +30,6 @@
   5. `mouseup`
   6. `click`
   7. `dbclick`
-* A `click` event can be fired only if a `mousedown` event is fired and followed by a `mouseup` event
-on the same element
+* A `click` event can be fired only if a `mousedown` event is fired and followed by a `mouseup` event on the same element
+* The DOM provides information about related elements via the `relatedTarget` property on the `event` object. This property contains a value only for the `mouseover` and `mouseout` events; it is `null` for all other events.
+* 
