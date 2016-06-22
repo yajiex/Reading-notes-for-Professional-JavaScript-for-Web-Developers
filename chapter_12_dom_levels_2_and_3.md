@@ -85,4 +85,11 @@
   4. `endOffset` => The offset within the `endContainer` where the range ends (follows the same rules as `startOffset`).
   5. `commonAncestorContainer` => The deepest node in the document that has both `startContainer` and `endContainer` as descendants.
 * The simplest way to select a part of the document using a range is to use either `selectNode()` or `selectNodeContents()`. These methods each accept one argument, a DOM node, and fill a range with information from that node. The `selectNode()` method selects the entire node, including its children, whereas `selectNodeContents()` selects only the node’s children.
-* 
+* When `selectNode()` is called, `startContainer`, `endContainer`, and `commonAncestorContainer` are all equal to the parent node of the node that was passed in, the `startOffset` property is equal to the index of the given node within the parent’s childNodes collection
+* When `selectNodeContents()` is called, `startContainer`, `endContainer`, and `commonAncestorContainer` are equal to the node that was passed in, the `startOffset` property is always equal to 0, since the range begins with the first child of the given node, whereas `endOffset` is equal to the number of child nodes (`node.childNodes.length`).
+* It’s possible to get more fine-grained control over which nodes are included in the selection by using the following range methods:
+  1. `setStartBefore(refNode)`
+  2. `setStartAfter(refNode)`
+  3. `setEndBefore(refNode)`
+  4. `setEndAfter(refNode)`
+* Creating complex ranges requires the use of the `setStart()` and `setEnd()` methods. Both methods accept two arguments: a reference node and an offset. For `setStart()`, the reference node becomes the `startContainer`, and the offset becomes the `startOffset`. For `setEnd()`, the reference node becomes the `endContainer`, and the offset becomes the `endOffset`.
