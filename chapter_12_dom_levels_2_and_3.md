@@ -51,5 +51,11 @@
   4. `selectorText` => Returns the selector text for the rule.
   5. `style` => A `CSSStyleDeclaration` object that allows the setting and getting of specific style values for the rule. It is read-only, whereas `style.cssText` may be overwritten.
   6. `type` => A constant indicating the type of rule.
-* 
+* Offset dimensions incorporate all of the visual space that an element takes up on the screen, including all padding, scrollbars, and borders (but not including margins), the following four properties are used to retrieve offset dimensions:
+  1. `offsetHeight` => The amount of vertical space, in pixels, taken up by the element, including its height, the height of a horizontal scrollbar (if visible), the top border height, and the bottom border height.
+  2. `offsetLeft` => The number of pixels between the element’s outside left border and the containing element’s inside left border.
+  3. `offsetTop` => The number of pixels between the element’s outside top border and the containing element’s inside top border.
+  4. `offsetWidth` => The amount of horizontal space taken up by the element, including its width, the width of a vertical scrollbar (if visible), the left border width, and the right border width.
+* The `offsetLeft` and `offsetTop` properties are in relation to the containing element, which is stored in the `offsetParent` property. The `offsetParent` may not necessarily be the same as the `parentNode`. For example, the `offsetParent` of a `<td>` element is the `<table>` element that it’s an ancestor of, because the `<table>` is the first element in the hierarchy that provides dimensions.
+* Client dimensions comprise the space occupied by the element's content and its padding. The `clientWidth` property is the width of the content area plus the width of both the left and the right padding. The `clientHeight` property is the height of the content area plus the height of both the top and the bottom padding.
 
