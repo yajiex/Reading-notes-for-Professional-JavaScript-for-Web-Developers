@@ -9,6 +9,7 @@
 * [Chapter 6: Object-Oriented Programming](chapter_6_object-oriented_programming.md)
 * [Chapter 7: Function Expressions](chapter_7_function_expressions.md)
 * [Chapter 8: The Browser Object Model](chapter_8_the_browser_object_model.md)
+* [Chapter 9: Client Detection](chapter_9_client_detection.md)
 * [Chapter 10: The Document Object Model](chapter_10_the_document_object_model.md)
 * [Chapter 11: DOM Extensions](chapter_11_dom_extensions.md)
 * [Chapter 12: DOM Levels 2 and 3](chapter_12_dom_levels_2_and_3.md)
@@ -24,5 +25,4 @@
 * [Chapter 22: Advanced Techniques](chapter_22_advanced_techniques.md)
 * [Chapter 23: Offline Applications and Client-Side Storage](chapter_23_offline_applications_and_client-side_st.md)
 * [Chapter 25: Emerging APIs](chapter_25_emerging_apis.md)
-* [Chapter 9: Client Detection](chapter_9_client_detection.md)
 
