@@ -104,4 +104,6 @@
   2. The given node is inserted into the position in the original document where the range was.
   3. The contents of the document fragment are added to the given node.
 * You can collapse a range by using the `collapse()` method, which accepts a single argument: a Boolean value indicating which end of the range to collapse to. If the argument is `true`, then the range is collapsed to its starting point; if it is `false`, the range is collapsed to its ending point. To determine if a range is already collapsed, you can use the `collapsed` property
+* You can use the `compareBoundaryPoints()` method to determine if the ranges have any boundaries (start or end) in common. The method accepts two arguments: the range to compare to and how to compare
+* `detach()` method detaches the range from the document on which it was created
 * 
