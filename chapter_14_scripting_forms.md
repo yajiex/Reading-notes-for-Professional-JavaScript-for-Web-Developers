@@ -33,3 +33,5 @@
 * Any field marked as `required` must have a value in order for the form to be submitted.
 * The `pattern` attribute was introduced for text fields in HTML5. This attribute specifies a regular expression with which the input value must match. Note that `^` and `$` are assumed at the beginning and end of the pattern, respectively. Specifying a `pattern` does not prevent the user from entering invalid text. The `pattern` is applied to the value, and the browser then knows if the value is valid or not.
 * You can check if any given field on the form is valid by using the `checkValidity()` method
+* You can instruct a form not to apply any validation to a form by specifying the `novalidate` attribute. If there are multiple submit buttons in a form, you can specify that the form not validate when a particular submit button is used by adding the `formnovalidate` attribute to the button itself
+* 
