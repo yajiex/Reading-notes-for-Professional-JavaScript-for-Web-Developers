@@ -57,5 +57,13 @@
   3. `offsetTop` => The number of pixels between the element’s outside top border and the containing element’s inside top border.
   4. `offsetWidth` => The amount of horizontal space taken up by the element, including its width, the width of a vertical scrollbar (if visible), the left border width, and the right border width.
 * The `offsetLeft` and `offsetTop` properties are in relation to the containing element, which is stored in the `offsetParent` property. The `offsetParent` may not necessarily be the same as the `parentNode`. For example, the `offsetParent` of a `<td>` element is the `<table>` element that it’s an ancestor of, because the `<table>` is the first element in the hierarchy that provides dimensions.
-* Client dimensions comprise the space occupied by the element's content and its padding. The `clientWidth` property is the width of the content area plus the width of both the left and the right padding. The `clientHeight` property is the height of the content area plus the height of both the top and the bottom padding.
+* Client dimensions comprise the space occupied by the element's content and its padding. The `clientWidth` property is the width of the content area plus the width of both the left and the right padding. The `clientHeight` property is the height of the content area plus the height of both the top and the bottom padding. The `clientWidth` property is the width of the content area plus the width of both the left and the right padding. The `clientHeight` property is the height of the content area plus the height of both the top and the bottom padding.
+* The four scroll dimension properties are as follows:
+  1. `scrollHeight` => The total height of the content if there were no scrollbars present.
+  2. `scrollLeft` => The number of pixels that are hidden to the left of the content area. This property can be set to change the scroll position of the element.
+  3. `scrollTop` => The number of pixels that are hidden in the top of the content area. This property can be set to change the scroll position of the element.
+  4. `scrollWidth` => The total width of the content if there were no scrollbars present.
+* When trying to determine the total height of a document, including the minimum height based on the viewport, you must take the maximum value of `scrollWidth/clientWidth` and `scrollHeight/clientHeight` to guarantee accurate results across browsers.
+* The `scrollLeft` and `scrollTop` properties can be used either to determine the current scroll settings on an element or to set them.
+* 
 
