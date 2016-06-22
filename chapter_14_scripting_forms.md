@@ -21,4 +21,15 @@
 * The `select` event fires once the user has finished selecting text. The `select` event also fires when the `select()` method is called.
 * `selectionStart` and `selectionEnd` contain zero-based numbers indicating the text-selection boundaries (the offset of the beginning of text selection and the offset of end of text selection, respectively).
 * `setSelectionRange()` takes two arguments: the index of the first character to select and the index at which to stop the selection
-* 
+* The following six events are related to the clipboard:
+  1. `beforecopy` => Fires just before the copy operation takes place.
+  2. `copy` => Fires when the copy operation takes place.
+  3. `beforecut` => Fires just before the cut operation takes place.
+  4. `cut` => Fires when the cut operation takes place.
+  5. `beforepaste` => Fires just before the paste operation takes place.
+  6. `paste` => Fires when the paste operation takes place.
+* The `beforecopy`, `beforecut`, and `beforepaste` events give you the opportunity to change the data being sent to or retrieved from the clipboard before the actual event occurs. However, canceling these events does not cancel the clipboard operation — you must cancel the `copy`, `cut`, or `paste` event to prevent the operation from occurring.
+* There are three methods on the `clipboardData` object: `getData()`, `setData()`, and `clearData()`.
+* Any field marked as `required` must have a value in order for the form to be submitted.
+* The `pattern` attribute was introduced for text fields in HTML5. This attribute specifies a regular expression with which the input value must match. Note that `^` and `$` are assumed at the beginning and end of the pattern, respectively. Specifying a `pattern` does not prevent the user from entering invalid text. The `pattern` is applied to the value, and the browser then knows if the value is valid or not.
+* You can check if any given field on the form is valid by using the `checkValidity()` method
