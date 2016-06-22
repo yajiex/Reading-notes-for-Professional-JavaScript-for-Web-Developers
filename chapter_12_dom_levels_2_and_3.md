@@ -43,5 +43,12 @@
   3. `deleteRule(index)` => Deletes the rule at the given location in the `cssRules` collection.
   4. `insertRule(rule, index)` => Inserts the given string rule at the position specified in the `cssRules` collection.
 * The list of style sheets available on the `document` is represented by `document.styleSheets`
-* 
+* The DOM specifies a property called `sheet` that contains the `CSSStyleSheet` object.
+* Several properties for `CSSRule`, which represents each rule in a style sheet
+  1. `cssText` => Returns the text for the entire rule.
+  2. `parentRule` => If this rule is imported, this is the import rule; otherwise, this is `null`.
+  3. `parentStyleSheet` => The style sheet that this rule is a part of.
+  4. `selectorText` => Returns the selector text for the rule.
+  5. `style` => A `CSSStyleDeclaration` object that allows the setting and getting of specific style values for the rule.
+  6. `type` => A constant indicating the type of rule.
 
