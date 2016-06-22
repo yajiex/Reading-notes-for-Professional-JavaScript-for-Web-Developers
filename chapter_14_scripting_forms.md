@@ -19,4 +19,6 @@
 * By default, the `<input>` element displays a text box, even when the `type` attribute is omitted (the default value is `"text"`). The `size` attribute can then be used to specify how wide the textbox should be in terms of visible characters. The `maxlength` attribute specifies the maximum number of characters allowed in the text box
 * `select()` selects all of the text in a text box. Most browsers automatically set focus to the text box when the `select()` method is called
 * The `select` event fires once the user has finished selecting text. The `select` event also fires when the `select()` method is called.
+* `selectionStart` and `selectionEnd` contain zero-based numbers indicating the text-selection boundaries (the offset of the beginning of text selection and the offset of end of text selection, respectively).
+* `setSelectionRange()` takes two arguments: the index of the first character to select and the index at which to stop the selection
 * 
