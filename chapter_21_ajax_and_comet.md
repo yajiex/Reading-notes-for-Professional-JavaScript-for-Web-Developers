@@ -17,4 +17,6 @@
 * There are two popular approaches to Comet: long polling and streaming.
   1. Long polling => The page initiates a request to the server and the server holds that connection open until it has data to send. Once the data is sent, the connection is closed by the browser and a new connection is immediately opened up to the server. This process continues for as long as the page is open in the browser.
   2. HTTP streaming => The browser sends a request to the server and the server holds that connection open, periodically sending data through the connection to the server.
-* 
+* Server-Sent Events (SSE) is an API and pattern for read-only Comet interactions.
+* You must pass in an absolute URL to the `WebSocket` constructor. The same-origin policy does not apply to Web Sockets, so you can open a connection to any site.
+* When an unauthorized system is able to access a resource, it is considered a cross-site request forgery (CSRF) attack.
