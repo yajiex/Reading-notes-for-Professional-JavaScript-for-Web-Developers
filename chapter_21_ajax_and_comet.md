@@ -10,3 +10,7 @@
 * You can cancel an asynchronous request before a response is received by calling the `abort()` method
 * You can retrieve the response headers from an XHR object by using the `getResponseHeader()` method and passing in the name of the header to retrieve. It's also possible to retrieve all headers as a long string by using the `getAllResponseHeaders()` method.
 * The `onprogress` event listener receives an `event` object whose target is the XHR object and contains three additional properties: `lengthComputable`, a Boolean indicating if progress information is available; `position`, which is the number of bytes that have already been received; and `totalSize`, which is the total number of expected bytes as defined by the `Content-Length` response header.
+* There are some additional limitations on a cross-domain XHR object that are necessary for security purposes. They are as follows:
+  1. Custom headers cannot be set using `setRequestHeader()`.
+  2. Cookies are neither sent nor received.
+  3. The `getAllResponseHeaders()` method always returns an empty string.
