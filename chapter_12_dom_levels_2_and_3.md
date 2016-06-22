@@ -30,5 +30,18 @@
 * Removing a property using `removeProperty()` means that any default styling for that property (cascading from other style sheets) will be applied.
 * The `style` object offers information about the `style` attribute on any element that supports it but contains no information about the styles that have cascaded from style sheets and affect the element.
 * `getComputedStyle()` accepts two arguments: the lement to get the computed style for and a pseudo-element string (such as `":after"`)
+* Several properties for `StyleSheet`, with the exception of `disabled`, the rest are read-only
+  1. `disabled` => A Boolean value indicating if the style sheet is disabled. This property is read/write, so setting its value to true will disable a style sheet.
+  2. `href` => The URL of the style sheet if it is included using `<link>`; otherwise, this is `null`.
+  3. `media` => A collection of media types supported by this style sheet.
+  4. `ownerNode` => Pointer to the node that owns the style sheet
+  5. `parentStyleSheet` => When a style sheet is included via `@import`, this is a pointer to the style sheet that imported it.
+  6. `title` => The value of the title attribute on the `ownerNode`.
+* `CSSStyleSheet` also supports:
+  1. `cssRules` => collection of rules contained in the style sheet.
+  2. `ownerRule` => If the style sheet was included using `@import`, this is a pointer to the rule representing the import; otherwise, this is `null`.
+  3. `deleteRule(index)` => Deletes the rule at the given location in the `cssRules` collection.
+  4. `insertRule(rule, index)` => Inserts the given string rule at the position specified in the `cssRules` collection.
+* The list of style sheets available on the `document` is represented by `document.styleSheets`
 * 
 
