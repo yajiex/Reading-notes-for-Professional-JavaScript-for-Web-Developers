@@ -25,4 +25,5 @@
 * [Chapter 22: Advanced Techniques](chapter_22_advanced_techniques.md)
 * [Chapter 23: Offline Applications and Client-Side Storage](chapter_23_offline_applications_and_client-side_st.md)
 * [Chapter 25: Emerging APIs](chapter_25_emerging_apis.md)
+* Chapter 24: Best Practices
 
