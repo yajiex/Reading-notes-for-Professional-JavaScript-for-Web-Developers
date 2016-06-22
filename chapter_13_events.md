@@ -66,3 +66,6 @@
   3. `loaded` => The object has finished loading its data.
   4. `interactive` => The object can be interacted with but it’s not fully loaded.
   5. `complete` => The object is completely loaded.
+* back-forward cache (bfcache) is designed to speed up page transitions when using the browser’s Back and Forward buttons. The cache stores not only page data but also the DOM and JavaScript state, effectively keeping the entire page in memory. If a page is in the bfcache, the load event will not fire when the page is navigated to.
+* `pageshow`, fires whenever a page is displayed, whether from the bfcache or not. On a newly loaded page, `pageshow` fires after the `load` event; on a page in the bfcache, `pageshow` fires as soon as the page's state has been completely restored. The event handler must be attached to `window`
+* The `event` object for `pageshow` includes a property called `persisted`. This is a Boolean value that is set to `true` if the page is stored in the bfcache or false if the page is not.
