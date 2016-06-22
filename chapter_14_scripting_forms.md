@@ -49,4 +49,7 @@
 * It's worth noting that setting the `selected` property to `false` has no effect in a single-select select box.
 * Rich text (also called **what you see is what your get**), the basic technique of it is to embed an `iframe` containing a blank HTML file in the page. Through the `designMode` property, this blank document can be made editable, at which point you're editing the HTML of the page's `<body>` element.
 * The `contenteditable` attribute can be applied to any element on a page and instantly makes that element editable by the user.
-* 
+* The primary method of interacting with a rich text editor is through the use of `document.execCommand()`. There are three possible arguments for `document.execCommand()`: the name of the command to execute, a Boolean value indicating if the browser should provide a user interface for the command, and a value necessary for the command to work (or `null` if none is necessary).
+* `queryCommandEnabled()` determines if a command can be executed given the current text selection or caret position. This method accepts a single argument, the command name to check, and returns true if the command is allowed given the state of the editable area or `false` if not.
+* The `queryCommandState()` method lets you determine if a given command has been applied to the current text selection.
+* `queryCommandValue()` is intended to return the value with which a command was executed.
