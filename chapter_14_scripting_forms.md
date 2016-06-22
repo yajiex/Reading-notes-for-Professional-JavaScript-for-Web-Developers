@@ -34,14 +34,17 @@
 * The `pattern` attribute was introduced for text fields in HTML5. This attribute specifies a regular expression with which the input value must match. Note that `^` and `$` are assumed at the beginning and end of the pattern, respectively. Specifying a `pattern` does not prevent the user from entering invalid text. The `pattern` is applied to the value, and the browser then knows if the value is valid or not.
 * You can check if any given field on the form is valid by using the `checkValidity()` method
 * You can instruct a form not to apply any validation to a form by specifying the `novalidate` attribute. If there are multiple submit buttons in a form, you can specify that the form not validate when a particular submit button is used by adding the `formnovalidate` attribute to the button itself
-* `HTMLSelectElement` type provides the following properties and methods in addition to those that are available on all form fi elds:
-add(newOption, relOption) — Adds a new <option> element to the control before the
-related option.
-multiple — A Boolean value indicating if multiple selections are allowed; equivalent to the
-HTML multiple attribute.
-options — An HTMLCollection of <option> elements in the control.
-remove(index) — Removes the option in the given position.
-selectedIndex — The zero-based index of the selected option or –1 if no options are
-selected. For select boxes that allow multiple selections, this is always the fi rst option in
-the selection.
-size — The number of rows visible in the select box; equivalent to the HTML size attribute.
+* `HTMLSelectElement` type provides the following properties and methods in addition to those that are available on all form fields:
+  1. `add(newOption, relOption)` => Adds a new `<option>` element to the control before the related option.
+  2. `multiple` => A Boolean value indicating if multiple selections are allowed; equivalent to the HTML `multiple` attribute.
+  3. `options` => An `HTMLCollection` of `<option>` elements in the control.
+  4. `remove(index)` => Removes the option in the given position.
+  5. `selectedIndex` => The zero-based index of the selected option or `–1` if no options are selected. For select boxes that allow multiple selections, this is always the first option in the selection.
+  6. `size` => The number of rows visible in the select box; equivalent to the HTML `size` attribute.
+* The `type` property for a select box is either `"select-one"` or `"select-multiple"`, depending on the absence or presence of the `multiple` attribute. The option that is currently selected determines a select box's value property according to the following rules:
+  1. If there is no option selected, the value of a select box is an empty string.
+  2. If an option is selected and it has a value `attribute` specified, then the select box’s value is the `value` attribute of the selected option. This is true even if the `value` attribute is an empty string.
+  3. If an option is selected and it doesn't have a `value` attribute specified, then the select box's value is the text of the option.
+  4. If multiple options are selected, then the select box's value is taken from the first selected option according to the previous two rules.
+* It's worth noting that setting the `selected` property to `false` has no effect in a single-select select box.
+* 
