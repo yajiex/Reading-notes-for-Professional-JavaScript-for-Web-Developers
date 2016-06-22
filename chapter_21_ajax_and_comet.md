@@ -8,4 +8,4 @@
   4. `3` => Receiving. Some response data has been retrieved.
   5. `4` => Complete. All of the response data has been retrieved and is available.
 * You can cancel an asynchronous request before a response is received by calling the `abort()` method
-
+* You can retrieve the response headers from an XHR object by using the `getResponseHeader()` method and passing in the name of the header to retrieve. It's also possible to retrieve all headers as a long string by using the `getAllResponseHeaders()` method.
