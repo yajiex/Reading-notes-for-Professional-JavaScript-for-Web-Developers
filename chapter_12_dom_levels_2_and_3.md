@@ -49,6 +49,7 @@
   2. `parentRule` => If this rule is imported, this is the import rule; otherwise, this is `null`.
   3. `parentStyleSheet` => The style sheet that this rule is a part of.
   4. `selectorText` => Returns the selector text for the rule.
-  5. `style` => A `CSSStyleDeclaration` object that allows the setting and getting of specific style values for the rule.
+  5. `style` => A `CSSStyleDeclaration` object that allows the setting and getting of specific style values for the rule. It is read-only, whereas `style.cssText` may be overwritten.
   6. `type` => A constant indicating the type of rule.
+* 
 
