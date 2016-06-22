@@ -23,7 +23,7 @@
 * [Chapter 20: JSON](chapter_20_json.md)
 * [Chapter 21: Ajax and Comet](chapter_21_ajax_and_comet.md)
 * [Chapter 22: Advanced Techniques](chapter_22_advanced_techniques.md)
+* [Chapter 24: Best Practices](chapter_24_best_practices.md)
 * [Chapter 23: Offline Applications and Client-Side Storage](chapter_23_offline_applications_and_client-side_st.md)
 * [Chapter 25: Emerging APIs](chapter_25_emerging_apis.md)
-* [Chapter 24: Best Practices](chapter_24_best_practices.md)
 
