@@ -34,4 +34,14 @@
 * The `pattern` attribute was introduced for text fields in HTML5. This attribute specifies a regular expression with which the input value must match. Note that `^` and `$` are assumed at the beginning and end of the pattern, respectively. Specifying a `pattern` does not prevent the user from entering invalid text. The `pattern` is applied to the value, and the browser then knows if the value is valid or not.
 * You can check if any given field on the form is valid by using the `checkValidity()` method
 * You can instruct a form not to apply any validation to a form by specifying the `novalidate` attribute. If there are multiple submit buttons in a form, you can specify that the form not validate when a particular submit button is used by adding the `formnovalidate` attribute to the button itself
-* 
+* `HTMLSelectElement` type provides the following properties and methods in addition to those that are available on all form fi elds:
+add(newOption, relOption) — Adds a new <option> element to the control before the
+related option.
+multiple — A Boolean value indicating if multiple selections are allowed; equivalent to the
+HTML multiple attribute.
+options — An HTMLCollection of <option> elements in the control.
+remove(index) — Removes the option in the given position.
+selectedIndex — The zero-based index of the selected option or –1 if no options are
+selected. For select boxes that allow multiple selections, this is always the fi rst option in
+the selection.
+size — The number of rows visible in the select box; equivalent to the HTML size attribute.
