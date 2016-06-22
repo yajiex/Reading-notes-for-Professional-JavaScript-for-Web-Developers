@@ -93,3 +93,14 @@
   3. `setEndBefore(refNode)`
   4. `setEndAfter(refNode)`
 * Creating complex ranges requires the use of the `setStart()` and `setEnd()` methods. Both methods accept two arguments: a reference node and an offset. For `setStart()`, the reference node becomes the `startContainer`, and the offset becomes the `startOffset`. For `setEnd()`, the reference node becomes the `endContainer`, and the offset becomes the `endOffset`.
+* `deleteContents()` simply deletes the contents of the range from the document, the range selection process altered the underlying DOM structure to remain well formed
+* `extractContents()` also removes the range selection from the document, it returns the range's document fragement as the function value.
+* When a document fragment is passed into `appendChild()`, only the fragment’s children are added, not the fragment itself
+* `cloneContents()` can be used to create a clone of range, the document fragement returned by `cloneContents()` contains clones of the nodes contained in the range instead of the actual nodes.
+* The splitting of nodes ensures that a well-formed document isn’t produced until one of these methods is called. The original HTML remains intact right up until the point that the DOM is modified.
+* The `insertNode()` method enables you to insert a node at the beginning of the range selection.
+* `surroundContents()` method accepts one argument, which is the node that surrounds the range contents. Behind the scenes, the following steps are taken:
+  1. The contents of the range are extracted (similarly to using `extractContents()`).
+  2. The given node is inserted into the position in the original document where the range was.
+  3. The contents of the document fragment are added to the given node.
+  4. 
