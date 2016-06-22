@@ -33,4 +33,6 @@
 * A `click` event can be fired only if a `mousedown` event is fired and followed by a `mouseup` event on the same element
 * The DOM provides information about related elements via the `relatedTarget` property on the `event` object. This property contains a value only for the `mouseover` and `mouseout` events; it is `null` for all other events.
 * For mouse events, `detail` contains a number indicating how many times a click has occurred at the given location. Clicks are considered to be a `mousedown` event followed by a `mouseup` event at the same pixel location. The value of detail starts at 1 and is incremented every time a click occurs. If the mouse is moved between `mousedown` and `mouseup`, then `detail` is set back to 0.
-* 
+* Three keyboard events:
+  1. `keydown` => Fires when the user presses a key on the keyboard and fires repeatedly while the key is being held down.
+  2. 
