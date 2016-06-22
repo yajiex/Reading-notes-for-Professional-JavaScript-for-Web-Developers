@@ -39,4 +39,7 @@
   3. `keyup` => Fires when the user releases a key on the keyboard.
 * When the user presses a character key once on the keyboard, the `keydown` event is fired first, followed by the `keypress` event, followed by the `keyup` event. Note that both `keydown` and `keypress` are fired before any change has been made to the text box, whereas the `keyup` event fires after changes have been made to the text box. If a character key is pressed and held down, `keydown` and `keypress` are fired repeatedly and don't stop until the key is released.
 * There is only one text event and it is called `textInput`. This event is an augmentation of `keypress` intended to make it easier to intercept text input before being displayed to the user. The `textInput` event fires just before text is inserted into a text box. Since the `textInput` event is interested primarily in characters, it provides a `data` property on the `event` object that contains the character that was inserted (not the character code). The value of `data` is always the exact character that was inserted, so if the `S` key is pressed without `Shift`, data is `"s"`, but if the same key is pressed holding `Shift` down, then data is `"S"`.
-* 
+* Difference between `keypress` and `textInput`: 
+  1. `keypress` fires on any element that can have focus but `textInput` fires only on editable areas
+  2. `textInput` fires only for keys that result in a new character being inserted, whereas `keypress` fires for keys that affect text in any way (including `Backspace`).
+  3. 
