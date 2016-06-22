@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [Chapter 1: What Is JavaScript](chapter_1_what_is_javascript.md)
 * [Chapter 2: JavaScript in HTML](chapter_2_javascript_in_html.md)
 * [Chapter 3: Language Basics](chapter_3_language_basics.md)
 * [Chapter 4: Variables, Scope, and Memory](chapter_4_variables,_scope,_and_memory.md)
@@ -23,5 +24,4 @@
 * [Chapter 22: Advanced Techniques](chapter_22_advanced_techniques.md)
 * [Chapter 23: Offline Applications and Client-Side Storage](chapter_23_offline_applications_and_client-side_st.md)
 * [Chapter 25: Emerging APIs](chapter_25_emerging_apis.md)
-* [Chapter 1: What Is JavaScript](chapter_1_what_is_javascript.md)
 
