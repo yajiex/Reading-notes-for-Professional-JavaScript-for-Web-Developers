@@ -47,4 +47,4 @@
   3. If an option is selected and it doesn't have a `value` attribute specified, then the select box's value is the text of the option.
   4. If multiple options are selected, then the select box's value is taken from the first selected option according to the previous two rules.
 * It's worth noting that setting the `selected` property to `false` has no effect in a single-select select box.
-* 
+* Rich text (also called **what you see is what your get**), the basic technique of it is to embed an `iframe` containing a blank HTML file in the page. Through the `designMode` property, this blank document can be made editable, at which point you're editing the HTML of the page's `<body>` element.
