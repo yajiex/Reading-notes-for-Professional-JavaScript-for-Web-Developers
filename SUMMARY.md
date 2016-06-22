@@ -23,5 +23,5 @@
 * [Chapter 22: Advanced Techniques](chapter_22_advanced_techniques.md)
 * [Chapter 23: Offline Applications and Client-Side Storage](chapter_23_offline_applications_and_client-side_st.md)
 * [Chapter 25: Emerging APIs](chapter_25_emerging_apis.md)
-* Chapter 1: What Is JavaScript
+* [Chapter 1: What Is JavaScript](chapter_1_what_is_javascript.md)
 
