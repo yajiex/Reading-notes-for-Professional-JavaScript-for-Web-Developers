@@ -65,5 +65,9 @@
   4. `scrollWidth` => The total width of the content if there were no scrollbars present.
 * When trying to determine the total height of a document, including the minimum height based on the viewport, you must take the maximum value of `scrollWidth/clientWidth` and `scrollHeight/clientHeight` to guarantee accurate results across browsers.
 * The `scrollLeft` and `scrollTop` properties can be used either to determine the current scroll settings on an element or to set them.
+* A new instance of `NodeIterator` can be created using the `document.createNodeIterator()` method. This method accepts the following four arguments:
+  1. `root` => The node in the tree that you want to start searching from.
+  2. `whatToShow` => A numerical code indicating which nodes should be visited.
+  3. `filter` => A `NodeFilter` object or a function indicating whether a particular node should be accepted or rejected.
+  4. `entityReferenceExpansion` => A Boolean value indicating whether entity references should be expanded. This has no effect in HTML pages, because entity references are never expanded.
 * 
-
