@@ -42,4 +42,20 @@
 * Difference between `keypress` and `textInput`: 
   1. `keypress` fires on any element that can have focus but `textInput` fires only on editable areas
   2. `textInput` fires only for keys that result in a new character being inserted, whereas `keypress` fires for keys that affect text in any way (including `Backspace`).
-  3. 
+* There are three composition events:
+  1. `compositionstart` => Fires when the text composition system of the IME is opened, indicating that input is about to commence.
+  2. `compositionupdate` => Fires when a new character has been inserted into the input field.
+  3. `compositionend` => Fires when the text composition system is closed, indicating a return to normal keyboard input.
+* When a composition event fires, the target is the input field receiving the text. The only additional event property is `data`, which contains one of the following:
+  1. When accessed during `compositionstart`, contains the text being edited (for instance, if text has been selected and will now be replaced).
+  2. When accessed during `compositionupdate`, contains the new character being inserted.
+  3. When accessed during `compositionend`, contains all of the input entered during this composition session.
+* The mutation events defined in DOM Level 2 are as follows:
+  1. `DOMSubtreeModified` => Fires when any change occurs to the DOM structure. This is a catchall event that fires after any of the other events fire.
+  2. `DOMNodeInserted` => Fires after a node is inserted as a child of another node.
+  3. `DOMNodeRemoved` => Fires before a node is removed from its parent node.
+  4. `DOMNodeInsertedIntoDocument` => Fires after a node has been inserted either directly or by inserting the subtree in which it exists. This event fires after `DOMNodeInserted`.
+  5. `DOMNodeRemovedFromDocument` => Fires before a node is removed either directly or by having the subtree in which it exists removed. This event fires after `DOMNodeRemoved`.
+  6. `DOMAttrModified` => Fires when an attribute has been modified.
+  7. `DOMCharacterDataModified` => Fires when a change is made to the value of a text node.
+  8. 
