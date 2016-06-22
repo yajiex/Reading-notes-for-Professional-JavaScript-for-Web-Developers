@@ -77,6 +77,7 @@
   4. `nextSibling()` => Travels to the next sibling of the current node.
   5. `previousSibling()` => Travels to the previous sibling of the current node.
 * When used with a `TreeWalker` object, `NodeFilter.FILTER_SKIP` skips over the node and goes on to the next node in the subtree, whereas `NodeFilter.FILTER_REJECT` skips over that node and that node’s entire subtree.
+* The ·TreeWalker· type also has a property called ·currentNode· that indicates the node that was last returned from the traversal via any of the traversal methods. This property can also be set to change where the traversal continues from when it resumes
 * `document.createRange()`, several properties for `Range` type:
   1. `startContainer` => The node within which the range starts (the parent of the first node in the selection).
   2. `startOffset` => The offset within the `startContainer` where the range starts. If `startContainer` is a text node, comment node, or `CData` node, the `startOffset` is the number of characters skipped before the range starts; otherwise, the offset is the index of the first child node in the range.
@@ -84,3 +85,4 @@
   4. `endOffset` => The offset within the `endContainer` where the range ends (follows the same rules as `startOffset`).
   5. `commonAncestorContainer` => The deepest node in the document that has both `startContainer` and `endContainer` as descendants.
 * The simplest way to select a part of the document using a range is to use either `selectNode()` or `selectNodeContents()`. These methods each accept one argument, a DOM node, and fill a range with information from that node. The `selectNode()` method selects the entire node, including its children, whereas `selectNodeContents()` selects only the node’s children.
+* 
