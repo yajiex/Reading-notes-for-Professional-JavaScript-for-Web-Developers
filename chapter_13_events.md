@@ -35,4 +35,8 @@
 * For mouse events, `detail` contains a number indicating how many times a click has occurred at the given location. Clicks are considered to be a `mousedown` event followed by a `mouseup` event at the same pixel location. The value of detail starts at 1 and is incremented every time a click occurs. If the mouse is moved between `mousedown` and `mouseup`, then `detail` is set back to 0.
 * Three keyboard events:
   1. `keydown` => Fires when the user presses a key on the keyboard and fires repeatedly while the key is being held down.
-  2. 
+  2. `keypress` => Fires when the user presses a key on the keyboard that results in a character and fires repeatedly while the key is being held down. This event also fires for the `Esc` key.
+  3. `keyup` => Fires when the user releases a key on the keyboard.
+* When the user presses a character key once on the keyboard, the `keydown` event is fired first, followed by the `keypress` event, followed by the `keyup` event. Note that both `keydown` and `keypress` are fired before any change has been made to the text box, whereas the `keyup` event fires after changes have been made to the text box. If a character key is pressed and held down, `keydown` and `keypress` are fired repeatedly and don’t stop until the key is released.
+* There is only one text event and it is called `textInput`. This event is an augmentation of `keypress` intended to make it easier to intercept text input before being displayed to the user. The `textInput` event fires just before text is inserted into a text box.
+* 
