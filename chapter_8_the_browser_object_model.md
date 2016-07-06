@@ -2,4 +2,4 @@
 
 * Global variables cannot be removed using the `delete` operator, while properties defined directly on `window` can. Attempting to access an undeclared variable throws an error, but it is possible to check for the existence of a potentially undeclared variable by looking on the `window` object.
 * The second argument of `setTimeout()` tells the JavaScript engine to add this task onto the queue after a set number of milliseconds. If the queue is empty, then that code is executed immediately; if the queue is not empty, the code must wait its turn.
-* True intervals are rarely used in production environments because this time between the end of one interval and the beginning of the next is not necessarily guaranteed, and some intervals my be skipped. Using timeouts ensures that can't happen.
+* True intervals are rarely used in production environments because this time between the end of one interval and the beginning of the next is not necessarily guaranteed, and some intervals may be skipped. Using timeouts ensures that can't happen.
